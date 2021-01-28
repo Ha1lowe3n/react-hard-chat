@@ -29,7 +29,6 @@ class LoginForm extends Component {
             <Form.Item
               name="username"
               hasFeedback
-              validateStatus="success"
               rules={[
                 {
                   required: true,

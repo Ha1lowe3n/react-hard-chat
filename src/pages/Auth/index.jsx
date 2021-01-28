@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import './Auth.scss';
 
-import { LoginForm } from '../../modules';
+import { LoginForm, RegisterForm } from '../../modules';
 
 function Auth() {
   return (
@@ -11,7 +11,7 @@ function Auth() {
       <div className="auth__content">
         <Switch>
           <Route exact path={['/', '/login']} component={LoginForm} />
-          <Route exact path="/register" render={() => <h2>hello</h2>} />
+          <Route exact path="/register" component={RegisterForm} />
         </Switch>
       </div>
     </section>

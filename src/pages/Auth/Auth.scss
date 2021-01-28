@@ -42,13 +42,33 @@
     height: 56px;
   }
 
+  &__success-block {
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    svg {
+      height: 48px;
+      width: 48px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
   .block {
     width: 430px;
 
     .ant-form-item-children-icon {
       svg {
-        height: 1.3em;
-        width: 1.3em;
+        height: 1.2em;
+        width: 1.2em;
       }
     }
   }
