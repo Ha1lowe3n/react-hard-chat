@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import ru from 'date-fns/locale/ru';
 
 import './Message.scss';
 
@@ -16,7 +18,9 @@ function Message({ avatar, user, text, date }) {
           <p className="message__text">{text}</p>
         </div>
 
-        <span className="message__date">{date}</span>
+        <span className="message__date">
+          {formatDistanceToNow(date, { addSuffix: true, locale: ru })}
+        </span>
       </div>
     </div>
   );
